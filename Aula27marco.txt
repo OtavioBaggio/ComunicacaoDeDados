@@ -1,0 +1,54 @@
+-->  TRANFERENCIA DE BITS  
+
+Tipos de transmissão serial:
+  codigo morse;
+  RS - 232;
+  USB;
+  FireWire;
+  Ethernet;
+  Fibre Channel;
+  Serial ATA;
+  Serial Atached SCSI (SAS);
+
+Sincronismo:
+  Nessa transmissão, os bits de um caracter são seguidos pelos do próximo, não existindo bits de star/stop;
+  Os bits do caracter são colocados entre um bit de start e um de stop;
+
+
+Conceitos Básicos:
+
+  Comunicação --> Processo pelo qual a informação é transmitida de forma confiável.
+  Mensagem --> A informação que será transmitida, podendo ser texto, áudio, vídeo, números, figuras, ou qualquer combinação destes
+  Sinal --> um sinal consistte de um domínio de frequência
+  Espectro --> é o domínio de frequência que consiste um sinal
+  Modulação --> é a alteração sistemática de uma, ou mais, características da onda portadora de acordo com a mensagem;
+    Porque modular?
+      Facilidade de irradiação;
+      Permite transmitir sinais de baixa frequência (banda base) por longas distâncias;
+      Permite transmitir dados por um único meio, usando várias portadoras de frequências diferentes;
+      Permite reduzir ruído e interferências;
+      Permite irradiar eletromagnéticamente com facilidade;
+  Portadora -> é a representação da mensagem em um meio de trnamissão (fisicamente).
+
+  Limitaçãoes Elétricas:
+    Limitações da comunicações elétricas --> Problemas tecnológicos, fatores de engenharia práticos
+                                          Problemas da natureza;
+    Limitação da Largura de faixa --> não se pode aumentar arbitrariamente a velocidade da sinalização, pois o sistema poderá ruir.
+    Limitação do Ruído --> como o ruido sempre está presente em sistemas elétricos, as perturbações do ruído sobreposto limitam a habilidade
+                           de identificar corretamente o sinal enviado, limitando assim, a transmissão da informação;
+      
+  Limites
+    Capacidade de um Canal:
+      Em um determinado sistema e uma relação anti-ruido, sendo a capacidade de um canal finita, diversos problemas no sistema pode ser do compromisso entre:
+          Tempo de transmissão;
+          Potencia transmitida;
+          Largura de faixa relação sinal ruido;
+          Problemas tecnológicos;
+
+  
+  Efeitos indesejados:
+    Atuanuação; -->  Redução da potencia do sinal ao longo do meio fisico
+    Distorção; -->  Alteração devido a respostas imperfeitas, é a transmissão infiel dos sinais
+    Interferência; -->  Contaminação por sinais estranhos
+    Ruído; -->  Sinais aleatórios ou imprevisíveis
+ 
