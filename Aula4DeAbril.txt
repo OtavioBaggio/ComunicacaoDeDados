@@ -1,0 +1,78 @@
+    Modelo OSI
+-> Quando as redes de computadores surgiram, as soluções eram , na maioria das vezes proprietárias, isto é definidas por suas próprias fabricantes.
+-> Para facilitar a interconexão dos sitemas de computadores, a ISO desenvolveu u modelo de rederencia chamado OSI, para que os fabricantes pudessem criar protocolos a partir desse modelo.
+
+  COMO FUNCIONA SUA ARQUITETURA:
+  - Interoperabilidade:  Capacidade que os sistemas abertos possuem de troca da informações entre eles, mesmo que sejam fornecidos por fabricantes diversos.
+  - Interconectividade:  É a maneira através da qual se pode conectar computadores de fabricantes diferentes.
+  - Portabilidade de Aplicação:  É a capacidade de um software rodar em várias plataformas diferentes (Java, C++).
+  - "Scalability" (Escalabilidade):  Capacidade de um software rodar com uma performance aceitável em computadores de capacidades diversas.
+
+  IBM
+    DEC(hoje: hp)
+  
+  RM OSI;
+
+  Vantagens de um sistema aberto:
+  -> Liberdade de escolha entre soluções de diversas fabricantes;
+  -> Acesso mais rapido a novas tecnologias e preços mais acessíveis, pois é mais barato fabricar produtos padronizados;
+  -> Redução de investimentos em novas máquinas, já que os sitemas e os softwares de aplicação são portáveis para vários tipos de máquinas;
+  -> A adoção de um modelo baseado em camadas;
+  -> Considerado que uma rede de computadores tem como objetivo o processamento de tarefas distribuídas pela rede de forma harmônica e cooperativa entre os vários processos de aplicação,
+     o projeto desta deve levar em conta vários fatores.
+  
+  Fatores na adoção de um modelo baseados em camadas:
+  -> Considerar todos os eventos possíveis de acontecer durante a comunicação;
+  -> Conhecer todos os efeitos e causas destes eventos;
+  -> Especificar em detalhes todos os aspectos técnicos-operacionais dos meios físicos a serem utilizados como suporte à comunicação;
+  -> Detalhes das próprias aplicações a serem executadas;
+
+  A arquitetura OSI foi desenvolvida a partir elementos basicos:
+  -> Os processos de aplicação existentes no ambiente OSI;
+  -> As conexões que ligam os processos de aplicação e que lhes permitem trocar informações;
+  -> Os sistemas;
+
+
+  AS 7 CAMADAS DO MODELO OSI:
+      -> Cada camada inferior à outra, presta serviço(terceirizando) para camada superior a ela;
+      -> A troca de informações entre as camadas ocorre por meio da troca primitiva de serviços nas interfaces entre as camadas;
+
+      7 - Aplicação
+      6 - Apresentação
+      5 - Seção
+      4 - Transporte
+      3 - Rede
+      2 - Enlace
+      1 - Física
+
+      -> Apesar da divisão em sete níveis, pode-se considerar genericamente que três camadas mais baixas cuidam dos apectos relacionados à transmissão de dados propriamente dita, 
+         e a camada de transporte lida com a comunicação fim-a-fim, enquanto que as três camadas superiores se preocupam com os aspectos relacionados a aplicação, já a nível de usuário.
+
+
+  CAMADAS DEPENDENTES DA REDE:
+    -> Física, Enlace (Ligação de Dados), Rede;
+        - Dependem do meio físico de transmissão, da topologia da rede;
+
+  CAMADAS DE INTERFACE:
+    -> Transporte
+        - Fornece uma interface independente da rede para ser usada pelas camadas orientadas à aplicação;
+  
+  CAMADAS ORIENTADAS À APLICAÇÃO:
+    -> Sessão, Apresentação, Aplicação;
+        - Dependem da máquina e do sistema operacional;
+
+
+
+  PRIMITIVAS DE SERVIÇOS:
+  -> As primitivas de serviços entre duas camadas adjacentes de forma a realizar um serviço;
+  -> No modelo OSI são definidas quatro tipos de primitivas:
+      - Pedido, Indicação, Resposta e Confirmação;
+
+  SERVIÇOS:
+  -> É um conjunto de primitivas que uma camada oferece à camada superior adjacente, ou seja, 
+     é uma interface entre duas camadas onde a inferior se comporta como provedora de serviço e a superior, a usuária;
+
+  -> O serviço define as operações que a camada está preparada para realizar, mas não diz como isso aconteceu;
+
+
+    
