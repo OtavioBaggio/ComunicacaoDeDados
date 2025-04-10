@@ -1,0 +1,77 @@
+request.DADOS -> solicita a trnamsissão de dados;
+indication.DADOS -> avisa sobre a chegada da solicitação de transmissão de dados
+
+		PROTOCOLOS
+
+Conjunto de regras que governa o formato e significado dos quadros, pacotes ou mensagens trocadas entre entidades parceiras dentro de uma mesma camada.
+São utilizados para implementar serviços;
+   O mais famoso é o IP -> Internet Protocol, se encontra na camada 3 - REDE;
+	
+
+Camada 1 - física -> é a única camada que possui acesso físico ao meio de transmissão de rede, devendo se preocupar com meios físicos como elétricos;
+
+
+Camada 2 - Enlace -> tem objetivo de prover uma conexão confiável sobre um meio físico. Sua função básica é detectar, opcionalmente, corrigir erros que ocorram no nível físico,
+ela não tem conhecimento de qualquer outra rede que não seja a sua;
+	IP
+	ARP
+	CSMACD
+
+
+Camada 3 -  Rede -> torna transparente para a camada de transporte a forma como os recursos dos níveis inferiores são utilizados para implementar conexões de rede.
+Deve também equalizar as diferenças entre as diversas sub-redes utilizadas de forma a fornecer um serviço único a seus usuários (Independente da rede);
+
+
+Camada 4 - Transporte -> provê mecanismos que possibilitam a troca de dados fim-a-fim, a camada de transporte não se comuniuca com máquinas intermediárias na rede,
+como pode ocorrer com as camadas inferiores.
+	É como se a camada 4 puxasse um "cabo" entre a máquina origem e a máquina destino e entregasse a camada 5;
+
+
+Camada 5 - Sessão -> estabelece sessões entre dois usuários, permitindo o transporte ordinário de dados (assim como a camada de transporte), porém com algum serviços mais
+refinados que podem ser úteis em algumas aplicações.
+	Ela controla os diálogos entre as aplicações dos sistemas local e remoto;
+	-> TCP (orientado a conexão) e UDP (orientado sem conexão) controlam o pacote, se recebeu ou não;
+	-> Exemplo: download no torrent, quem gerencia é a sessão;
+Também se pode agrupar dados em blocos e depois marcá-los depois de enviados, caso haja uma interrupção na conexão, a próxima poderá recomeçar a partir do fim do último bloco enviado;
+
+
+Camada 6 - Apresentação -> prepara os dados em um domínio local e colocá-los em um formato compatível com procedimentos de transporte. No caminho inverso,
+padroniza os diversos tipos de dados de uma forma que qualquer aplicação possa ser escrita para usar a rede.
+	-> Independente das 5 camadas inferiores;	
+	-> Criptografia e Compressão de dados;
+
+
+Camada 7 - Aplicação -> onde fica as aplicações, como o navegador WEB, a camada 7 representa todos os aplicativos que querem se comunicar na internet mas não sabem como,
+então conversa com a camada 6;
+
+
+		MODELO TCP/IP
+
+	Tinha como objetivo desenvolver tecnologias para que as máquinas interligadas em rede continuassem a se comunicar mesmo que parte dela não estivesse operacional.
+O projeto resultou na ARPANET
+	O nome TCP/IP se deve a dois dos principais protocolos na família:
+	TCP -> Transmission Control Protocol;
+	IP -> Internet Protocol;
+
+O TCP/IP é formado por 4 camadas:
+		Interface com a rede;
+		Internet;
+		Transporte;
+		Aplicação;
+
+	
+		TCP vs UDP
+
+	TCP é melhor para conexões entre sistemas computacionais e redes;
+	UDP tira vantagem por ser mais rápido QUANDO, se precisa de conexões mais rápidas, como chamadas de vídeo e transmissões ao vivo;
+	
+	
+
+		Internet Protocol (IP)
+	
+	É responsável pelo endereçamento entre a máquina de origem e máquina de destino;
+	Cada datagrama é independente um dos outros na rede;	
+	
+
+	
+
