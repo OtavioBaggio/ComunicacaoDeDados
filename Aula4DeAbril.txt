@@ -68,6 +68,11 @@
   -> No modelo OSI são definidas quatro tipos de primitivas:
       - Pedido, Indicação, Resposta e Confirmação;
 
+      Pedido (Request) --> utilizada para solicitar ou ativar um determinado serviço;
+      Indicação (Indication) --> informa a ocorrência de um determinado evento;
+      Resposta (Response) --> utilizada para responder a um determinado evento;
+      Confirmação (Confirmation) --> utilizada para confirmar a execução de um serviço solicitado;
+
   SERVIÇOS:
   -> É um conjunto de primitivas que uma camada oferece à camada superior adjacente, ou seja, 
      é uma interface entre duas camadas onde a inferior se comporta como provedora de serviço e a superior, a usuária;
